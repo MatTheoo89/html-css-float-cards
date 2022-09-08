@@ -49,12 +49,11 @@ span{
 .container{
   width: 80%;
   max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px 0;
+  margin: 0px auto;
 }
 
 /* UTILITY */
-.clearfix{
+.clearfix::after{
   content: attr('');
   display: table;
   clear: both;
