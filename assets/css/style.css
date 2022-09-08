@@ -5,18 +5,19 @@
   box-sizing: border-box;
 }
 
-main{
+main, p{
   font-family: 'Fredoka', sans-serif;
   padding: 30px;
   text-align: center;
-}
-
-section, p{
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 h1{
   color: #D43168;
+}
+
+h3{
+  text-transform: uppercase;
 }
 
 h3, .job{
@@ -28,13 +29,17 @@ span{
 }
 
 .mail{
-  color: #53ABD0;
+  color: #24C6F3;
 }
 
 .row .col img{
   height: 75px;
+  vertical-align: middle;
 }
 
+span{
+  display: block;
+}
 /* COMPONETS */
 
 .container{
@@ -57,3 +62,24 @@ span{
 }
 
 /* MAIN */
+
+.box{
+  background-color: #0F0E17;
+  box-shadow: 5px 5px 30px grey;
+}
+
+.job{
+  padding: 5px 0;
+}
+
+.row .col .box-2{
+  float: right;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-right: 60px;
+}
+
+.row .col .box-2 p{
+  padding: 5px 0;
+}
