@@ -37,8 +37,8 @@ span{
   vertical-align: middle;
 }
 
-span{
-  display: block;
+.row{
+  padding-bottom: 30px;
 }
 /* COMPONETS */
 
