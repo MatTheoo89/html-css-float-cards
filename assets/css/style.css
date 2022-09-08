@@ -12,6 +12,10 @@ main, p{
   padding: 40px 0;
 }
 
+section{
+  margin-bottom: 30px;
+}
+
 h1{
   color: #D43168;
 }
@@ -62,6 +66,7 @@ span{
 .box{
   display: inline-block;
   background-color: #0F0E17;
+  margin: 0 10px;
 }
 
 .row .box .reference{
