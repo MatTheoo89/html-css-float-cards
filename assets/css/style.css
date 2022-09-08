@@ -39,7 +39,6 @@ span{
 .row .box img{
   height: 75px;
   vertical-align: middle;
-  width: calc(100% - 75px);
 }
 
 /* COMPONETS */
@@ -66,6 +65,7 @@ span{
 
 .box{
   background-color: #0F0E17;
+  box-shadow: 2px 2px 20px #0F0E17;
   float: left;
   width: 31%;
   margin: 1%;
@@ -76,5 +76,5 @@ span{
   text-align: left;
   line-height: 1.5rem;
   padding: 0 50px 0 10px;
-
+  width: calc(100% - 75px);
 }
