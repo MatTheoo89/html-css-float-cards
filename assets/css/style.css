@@ -1,9 +1,42 @@
+/* GENERALI */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-boby{
+main{
   font-family: 'Fredoka', sans-serif;
+  padding: 40px;
+  text-align: center;
+}
+
+section, p{
+  padding: 30px 0;
+  text-align: center;
+}
+
+h1{
+  color: #D43168;
+}
+
+/* COMPONETS */
+
+.container{
+  width: 80%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px 0;
+}
+
+/* UTILITY */
+.clearfix{
+  content: attr('');
+  display: table;
+  clear: both;
+}
+
+.degub{
+  background-color: rgba(255, 0, 0, .50);
+  border: 3px solid red;
 }
