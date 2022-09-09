@@ -10,81 +10,86 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Floating Cards</title>
 </head>
+
 <body>
   
-  <header>
-    <!-- NON UTILIZZATA -->
-    <!-- Per questo esempio si può inserire H1 -->
-  </header>
-
   <main class="container">
-
-    <h1>Meet Our Team</h1>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequuntur et voluptatem, cupiditate fuga in temporibus obcaecati sunt aut rem, iusto soluta aperiam possimus illo, maxime autem eius esse animi.</p>
-
-    <section>
-      
-      <div class="row clearfix">
-        <div class="box">
-          <img src="assets/img/male1.png" alt="male1">
-          <div class="reference">
-            <h4>Marco Bianchi</h4>
-            <span class="job">Designer</span>
-            <span class="mail">marcobianchi@team.com</span>
-          </div>
-        </div>
-
-        <div class="box">
-          <img src="assets/img/female1.png" alt="female1">
-          <div class="reference">
-            <h4>Laura Rossi</h4>
-            <span class="job">Front-end Developer</span>
-            <span class="mail">laurarossi@team.com</span>
-          </div>
-        </div>
-
-        <div class="box">
-          <img src="assets/img/male2.png" alt="male2">
-          <div class="reference">
-            <h4>Giorgio Verdi</h4>
-            <span class="job">Back-end Developer</span>
-            <span class="mail">giorgioverdi@team.com</span>
-          </div>
-        </div>
-        
-        <div class="box">
-          <img src="assets/img/female2.png" alt="female2">
-          <div class="reference">
-            <h4>Marta Ipsum</h4>
-            <span class="job">SEO Specialist</span>
-            <span class="mail">martaipsum@team.com</span>
-          </div>
-        </div>
-
-        <div class="box">
-          <img src="assets/img/male3.png" alt="male3">
-          <div class="reference">
-            <h4>Roberto Lorem</h4>
-            <span class="job">Project Manager</span>
-            <span class="mail">robertolorem@team.com</span>
-          </div>
-        </div>
-
-        <div class="box">
-          <img src="assets/img/female3.png" alt="female3">
-          <div class="reference">
-            <h4>Daniela Amet</h4>
-            <span class="job">Analyst</span>
-            <span class="mail">danielaamet@team.com</span>
-          </div>
-        </div>
-      
-      
     
+    <h1>Meet Our Team</h1>
+    
+    <p class="intro-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet molestiae aliquam illo totam! Enim illo, cum aut hic vitae sunt veniam, nesciunt nemo expedita culpa ullam rem maiores laborum beatae.</p>
+
+    <section class="row clearfix">
+      <!-- alla card devo mettere clearfix, altrimenti il box non sapendo height non colora il BG -->
+      <div class="col">
+        <div class="card clearfix">
+          <img class="avatar" src="assets/img/male1.png" alt="male1">
+          <div class="contenents">
+            <h3 class="name">Marco Bianchi</h3>
+            <span class="position">Designer</span>
+            <a href="#">marcobianchi@team.com</a>
+          </div>
+        </div>
+      </div>
+        
+      <div class="col">
+        <div class="card clearfix">
+            <img class="avatar" src="assets/img/female1.png" alt="female1">
+            <div class="contenents">
+              <h3 class="name">Laura Rossi</h3>
+              <span class="position">Front-end Developer</span>
+              <a href="#">laurarossi@team.com</a>
+            </div>
+        </div>
+      </div>  
+
+      <div class="col">
+        <div class="card clearfix">
+          <img class="avatar" src="assets/img/male2.png" alt="male2">
+          <div class="contenents">
+            <h3 class="name">Giorgio Verdi</h3>
+            <span class="position">Back-end Developer</span>
+            <a href="#">giorgioverdi@team.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card clearfix">
+          <img class="avatar" src="assets/img/female2.png" alt="female2">
+          <div class="contenents">
+            <h3 class="name">Marta Ipsum</h3>
+            <span class="position">SEO Specialist</span>
+            <a href="#">martaipsum@team.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card clearfix">
+          <img class="avatar" src="assets/img/male3.png" alt="male3">
+          <div class="contenents">
+            <h3 class="name">Roberto Lorem</h3>
+            <span class="position">Project Manager</span>
+            <a href="#">robertolorem@team.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card clearfix">
+          <img class="avatar" src="assets/img/female3.png" alt="female3">
+          <div class="contenents">
+            <h3 class="name">Daniela Amet</h3>
+            <span class="position">Analyst</span>
+            <a href="#">danielaamet@team.com</a>
+          </div>
+        </div>
+      </div>
+   
     </section>
 
   </main>
-
 </body>
+
 </html>

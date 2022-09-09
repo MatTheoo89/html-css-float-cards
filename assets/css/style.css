@@ -1,57 +1,36 @@
 /* GENERALI */
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-main, p{
+body{
   font-family: 'Fredoka', sans-serif;
-  padding: 30px;
-  text-align: center;
-  padding: 40px 0;
-}
-
-section{
-  margin-bottom: 30px;
+  color: #0F0E17;
+  background-color: white;
 }
 
 h1{
   color: #D43168;
-}
-
-h4{
-  text-transform: uppercase;
-}
-
-h4, .job{
-  color: white;
-}
-
-span{
-  display: block;
-}
-
-.mail{
-  color: #24C6F3;
-}
-
-.row .box img{
-  height: 75px;
-  vertical-align: middle;
+  text-align: center;
+  margin: 50px 0;
+  font-size: 40px;
 }
 
 /* COMPONETS */
 
 .container{
-  width: 80%;
-  max-width: 1200px;
+  width: 90%;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
 /* UTILITY */
+
 .clearfix::after{
-  content: attr('');
+  content: "";
   display: table;
   clear: both;
 }
@@ -63,18 +42,55 @@ span{
 
 /* MAIN */
 
-.box{
-  background-color: #0F0E17;
-  box-shadow: 2px 2px 20px #0F0E17;
-  float: left;
-  width: 31%;
-  margin: 1%;
+.intro-text{
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 16px;
 }
 
-.row .box .reference{
+.col{
+  float: left;
+  /* le col sono sempre 1/3 contenitore, sotto ad una certa soglia non si ridimensionano ma vanno a capo */
+  width: calc(100% / 3);
+  min-width: 344px; /*min larghezza+padding*/
+  padding: 0 16px;
+  margin-bottom: 50px;
+}
+
+.card{
+  color: white;
+  background-color: #0F0E17;
+  /* shadow center */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.50);
+}
+
+.card .avatar{
+  float: left;
+  width: 100px;
+}
+
+.card .contenents{
   float: right;
-  text-align: left;
-  line-height: 1.5rem;
-  padding: 0 50px 0 10px;
-  width: calc(100% - 75px);
+  width: calc(100% - 100px - 16px);
+  /* sottraggo alla larghezza della card la dimensione img e crea margine di 16px */
+}
+
+.card .name{
+  text-transform: uppercase;
+  margin: 16px 0 6px;
+}
+
+.card .position{
+  display: block;
+  margin-bottom: 6px;
+}
+
+.card a:hover{
+  text-decoration: underline;
+}
+
+.card a{
+  color: #24C6F3;
+  text-decoration: none;
 }
